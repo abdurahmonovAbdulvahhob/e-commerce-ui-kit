@@ -10,7 +10,7 @@ const Wishes = () => {
   return (
     <div>
       {wishlist.length ? (
-        <Products data={wishlist} />
+        <Products title="Wishlist" data={wishlist} />
       ) : (
         <div className="text-center">
           <img

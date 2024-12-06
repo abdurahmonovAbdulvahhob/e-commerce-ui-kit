@@ -2,7 +2,7 @@ import React from "react";
 import { FaRegHeart, FaHeart } from "react-icons/fa";
 import { useStateValue } from "../../context";
 
-const Products = ({ data }) => {
+const Products = ({ data,title }) => {
   const { setWishlist, wishlist ,setCount} = useStateValue();
   const handleLike = (product) => {
     const index = wishlist.findIndex((item) => item.id === product.id);
@@ -42,7 +42,7 @@ const Products = ({ data }) => {
   ));
   return (
     <div className=" container text-center my-24 font-poppins">
-      <h2 className="text-[40px] font-[500]">Products</h2>
+      <h2 className="text-[40px] font-[500]">{title}</h2>
       <p className="text-[#5E6E89] text-lg ">
         Order it for you or for your beloved ones{" "}
       </p>

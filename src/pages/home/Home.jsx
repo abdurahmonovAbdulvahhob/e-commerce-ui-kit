@@ -15,7 +15,7 @@ const Home = () => {
     <div id="home">
       {/* <h2>Home</h2> */}
       <Hero/>
-      <Products data={data?.products}/>
+      <Products data={data?.products} title="Products"/>
     </div>
   );
 };
