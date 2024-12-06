@@ -2,6 +2,7 @@ import React from "react";
 import { useStateValue } from "../../context";
 import Products from "../../components/products/Products";
 import { useNavigate } from "react-router-dom";
+import hearts from "../../assets/hearts.png"
 
 const Wishes = () => {
   const { wishlist } = useStateValue();
@@ -14,7 +15,7 @@ const Wishes = () => {
         <div className="text-center">
           <img
             className="w-72 mx-auto mt-20"
-            src="https://uzum.uz/static/img/hearts.cf414be.png"
+            src={hearts}
             alt="hearts"
           />
           <p className="text-[#5E6E89] text-lg mb-8">
